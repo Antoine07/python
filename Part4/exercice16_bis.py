@@ -2,7 +2,8 @@
 
 """
 @Author: Antoine07
-Dessiner un damier avec contour 
+@Contributor: yukii
+Dessiner un damier avec contour version optimisée
 """
 N = 80
 SEPARATOR_MOTIF = "X"
