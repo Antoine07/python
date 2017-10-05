@@ -1,24 +1,19 @@
-# Exercice 16
+# Exercice 16_bis
 
 """
+@Author: Antoine07
 Dessiner un damier avec contour 
-
 """
-N = 25
+N = 80
+SEPARATOR_MOTIF = "X"
+FIRST_MOTIF = "#"
+SECOND_MOTIF = "O"
 
 for l in range(N):
     for c in range(N):
         if l == 0 or l == (N-1) or (c == 0 or c == (N-1)):
-            sym = "X"
+            sym = SEPARATOR_MOTIF
         else:
-            if l % 2 == 0:
-                sym = "#"
-                if c % 2 == 0:
-                    sym = "0"
-            else:
-                sym = "0"
-                if c % 2 == 0:
-                    sym  = "#"
+            sym = SECOND_MOTIF if (l + c) % 2 else  FIRST_MOTIF
         print(sym, end="")
     print()
-
